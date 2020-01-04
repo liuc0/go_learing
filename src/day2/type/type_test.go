@@ -4,6 +4,9 @@ import "testing"
 
 type MyInt int64
 
+/**
+ * go语言中数据类型转换
+ */
 func TestImplicit(t *testing.T) {
 	var a int32 = 1
 	var b int64

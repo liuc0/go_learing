@@ -1,8 +1,11 @@
 package constant
 
 import "fmt"
-// iota 在 const关键字出现时将被重置为 0(const 内部的第一行之前)，const 中每新增一行常量声明将使 iota 计数一次(iota 可理解为 const 语句块中的行索引)。
-// iota 可以被用作枚举值
+
+/**
+ * iota 在 const关键字出现时将被重置为 0(const 内部的第一行之前)，const 中每新增一行常量声明将使 iota 计数一次(iota 可理解为 const 语句块中的行索引)。
+ * iota 可以被用作枚举值
+ */
 const (
 	aa = iota
 	bb = iota

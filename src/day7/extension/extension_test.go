@@ -5,6 +5,9 @@ import (
 	"testing"
 )
 
+/**
+ * go语言的扩展与复用
+ */
 type Pet struct {
 }
 
@@ -27,6 +30,5 @@ func (d *Dog) Speak() {
 
 func TestDog(t *testing.T) {
 	dog := new(Dog)
-
 	dog.SpeakTo("Chao")
 }

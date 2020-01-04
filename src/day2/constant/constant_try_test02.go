@@ -2,7 +2,9 @@ package constant
 
 import "unsafe"
 
-// 枚举常量
+/**
+ * 定义枚举常量
+ */
 const (
 	a = "Hello"
 	b = 12

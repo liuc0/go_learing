@@ -2,6 +2,9 @@ package operator_test
 
 import "testing"
 
+/**
+ * 操作运算符
+ */
 const (
 	Readable = 1 << iota
 	Writable
@@ -11,6 +14,7 @@ const (
 func TestCompareArray(t *testing.T) {
 	a := [...]int{1, 2, 3, 4}
 	b := [...]int{1, 3, 2, 4}
+	// 定义数组c， a == c在未编译前就会提示错误
 	//	c := [...]int{1, 2, 3, 4, 5}
 	d := [...]int{1, 2, 3, 4}
 	t.Log(a == b)

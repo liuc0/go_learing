@@ -6,6 +6,7 @@ import (
 	"unsafe"
 )
 
+// 实例化Employee
 type Employee struct {
 	Id   string
 	Name string
@@ -17,12 +18,14 @@ type Employee struct {
 // 	return fmt.Sprintf("ID:%s/Name:%s/Age:%d", e.Id, e.Name, e.Age)
 // }
 
+// 在示例对应方法被调用时，实例的成员会进行值复制
 func (e Employee) String() string {
 	fmt.Printf("Address is %x\n", unsafe.Pointer(&e.Name))
 	return fmt.Sprintf("ID:%s-Name:%s-Age:%d", e.Id, e.Name, e.Age)
 }
 
 func TestCreateEmployeeObj(t *testing.T) {
+	// 创建实例
 	e := Employee{"0", "Bob", 20}
 	e1 := Employee{Name: "Mike", Age: 30}
 	e2 := new(Employee) //返回指针

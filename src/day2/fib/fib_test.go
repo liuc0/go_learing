@@ -1,9 +1,9 @@
-package fib
+package fib_test_test
 
 import "testing"
 
 /**
- *
+ * 使用go原完成斐波那契数列
  */
 func TestFibList(t *testing.T) {
 	// var指定 a 的数据类型
